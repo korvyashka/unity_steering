@@ -1,0 +1,18 @@
+using UnityEngine;
+using System.Collections;
+
+public class SteeringComponent : MonoBehaviour {
+
+	// Use this for initialization
+	void Start () {
+	}
+	
+	// Update is called once per frame
+	void Update () {
+	
+	}
+    
+    public virtual SteeringOutput getOutput(){
+        return new SteeringOutput(Vector2.right, 0);
+    }
+}
